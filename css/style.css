@@ -1,0 +1,216 @@
+/*armar clases para colores personalizados*/
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+::selection {
+    background-color: #FCDEEC;
+}
+
+.strong-light {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.bg-orange-gradient {
+    background: linear-gradient(130deg, #F4B4D2, #EE7A62);
+    background-color: #EE7A62;
+}
+
+.bg-dark-orange {
+    background-color: #0f0301;
+}
+
+.bg-light-sand {
+    background-color: #FFFDFD;
+}
+
+.bg-fucsia {
+    background-color: #E62384;
+}
+
+.border-dark-orange {
+    border: #320E06 solid 2px;
+}
+
+
+.btn-orange-gradient {
+    background: linear-gradient(130deg, #EE7A62, #F4B4D2);
+    background-color: #EE7A62;
+    color: whitesmoke;
+}
+
+.btn:hover {
+    background: linear-gradient(160deg, #E62384, #F4B4D2);
+    color: whitesmoke;
+}
+
+.text-dark-orange {
+    color: #210904;
+}
+
+.shadow-sm-personalizada {
+
+    box-shadow: 0 .125rem .25rem red;
+}
+
+#logo {
+    width: 120px;
+    height: 34px;
+}
+
+a.nav-link:hover {
+    
+    color: #E62384 !important;
+    font-weight: 500;
+}
+h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    color: #320E06;
+}
+
+h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+    color: #320E06;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container-formulario {
+    justify-content: center;
+
+}
+
+.form-control:focus {
+    color: #292321;
+    background-color: #fff;
+    border-color: #EE7A62;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(238, 122, 98, 0.25);
+}
+
+.form-select:focus {
+    border-color: #7B2210;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(238, 122, 98, 0.25);
+}
+
+option:hover {
+    background-color: #f1e1ff !important;
+}
+
+.form-check-input:checked {
+    background-color: #E62384;
+    border-color: #E62384;
+
+}
+
+.iconos-redes svg:hover {
+    fill: #E62384;
+}
+
+footer>div {
+    flex-direction: column;
+}
+
+.datos-footer {
+    text-align: center;
+    padding: 2rem 0rem;
+
+}
+
+.datos-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.modal {
+    height: 90%;
+}
+
+.modal-body {
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.txt-small{
+    font-size: 0.8rem;
+}
+
+.carousel-indicators .active{
+    background-color: rgba(238, 122, 98, 0.5)
+}
+
+
+
+/*
+.card{
+    --bs-card-border-width: 0px;
+}*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #logo {
+        width: 200px;
+        height: 57px;
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    footer>div {
+        flex-direction: row;
+    }
+
+    .datos-footer {
+        text-align: left;
+    }
+
+    .datos-footer ul {
+        list-style-type: circle;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    #container-formulario {
+        justify-content: center;
+
+    }
+
+    #seccion-suscripcion {
+        background-image: url("/img/bg-form-lg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+    #seccion-suscripcion {
+        background-image: url("/img/bg-form-1.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #container-formulario {
+        justify-content: start;
+    }
+}
